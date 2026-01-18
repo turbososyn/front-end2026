@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота - Варіант 6</title>
+    <link rel="stylesheet" href="styles.css">    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+            border: 2px solid #333;
+        }
+
+
+        .row-1 {
+            background-color: #068f8f;
+            color: #ffffff; 
+            transition: 0.3s;
+        }
+
+        .row-2 {
+            background-color: #f5f506;
+            color: #1a1a1a;
+            transition: 0.3s;
+        }
+
+        .row-1:hover {
+            background-color: #f5f506;
+            color: #1a1a1a;
+        }
+
+        .row-2:hover {
+            background-color: #068f8f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr class="row-1">
+            <td rowspan="2">Прізвище</td>
+            <td colspan="2">Ім'я</td>
+            <td>По</td>
+            <td>Батькові</td>
+        </tr>
+        
+        <tr class="row-2">
+            <td rowspan="2">Група: КН-201</td>
+            <td rowspan="2">Лаб. №1</td>
+            <td rowspan="3">Варіант: 6</td>
+            <td>Завдання</td>
+        </tr>
+        
+        <tr>
+            <td>Комірка 3.1</td>
+            <td colspan="2" rowspan="2">Комірка 3.2 (Велика)</td>
+        </tr>
+        
+        <tr>
+            <td colspan="3">Комірка 4.1 (Нижня)</td>
+        </tr>
+    </table>
+    
+    <h2>1. Реалізація за допомогою Position</h2>
+    <div class="phone-container pos-method">
+        <div class="case">
+            <div class="screen">12:00</div>
+            <div class="keypad">
+                <div class="key"></div> <div class="key"></div> <div class="key"></div>
+                <div class="key"></div> <div class="key"></div> <div class="key"></div>
+                <div class="key"></div> <div class="key"></div> <div class="key"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>2. Реалізація за допомогою Transform</h2>
+    <div class="phone-container trans-method">
+        <div class="case-t">
+            <div class="screen-t">12:00</div>
+            <div class="keypad-t">
+                <div class="key-t"></div> <div class="key-t"></div> <div class="key-t"></div>
+                <div class="key-t"></div> <div class="key-t"></div> <div class="key-t"></div>
+                <div class="key-t"></div> <div class="key-t"></div> <div class="key-t"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

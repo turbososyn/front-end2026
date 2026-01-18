@@ -1,0 +1,81 @@
+.phone-container {
+    padding: 50px;
+    height: 350px;
+}
+
+.case, .case-t {
+    width: 120px;
+    height: 220px;
+    background-color: #d4e1b5;
+    border: 2px solid #000;
+    border-radius: 25px;
+}
+
+.pos-method .case {
+    position: relative;
+}
+
+.pos-method .screen {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 96px;
+    height: 90px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.pos-method .keypad {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.pos-method .key {
+    width: 20px;
+    height: 20px;
+    background-color: #3d2b4d;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+
+.trans-method .screen-t {
+    width: 96px;
+    height: 90px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    transform: translate(11px, 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.trans-method .keypad-t {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 80px;
+    transform: translate(18px, 35px);
+}
+
+.trans-method .key-t {
+    width: 20px;
+    height: 20px;
+    background-color: #3d2b4d;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transform: scale(1.1); 
+}
